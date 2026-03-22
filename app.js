@@ -265,11 +265,4 @@ app.get("/articles", function (req, res) {
   res.render("articles")
 })
 
-let port = process.env.PORT;
-if (port == null || port == "") {
-  port = 3000;
-}
-
-app.listen(port, function () {
-  console.log("Frenchfries served on table 3000");
-});
+module.exports = app;
